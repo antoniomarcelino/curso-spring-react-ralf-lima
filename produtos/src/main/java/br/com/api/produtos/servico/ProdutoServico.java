@@ -23,6 +23,13 @@ public class ProdutoServico {
         return pr.findAll();
     }
 
+    //Método para remover produtos
+    public ResponseEntity<RespostaModelo> remover(Long codigo){
+        pr.deleteById(codigo);
+        rm.setMensagem("O produto foi removido com sucesso!");
+        return new ResponseEntity<RespostaModelo>(rm, HttpStatus.OK);
+    }
+
     //Método para cadastrar ou alterar produtos
     public ResponseEntity<?> cadastrarAlterar(ProdutoModelo pm, String acao){
         if(pm.getNome().equals("")){
