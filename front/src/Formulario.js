@@ -1,6 +1,6 @@
 function Formulario(){
     return(
-        <div>
+        <form>
             <input type='text' placeholder='Nome' />
             <input type='text' placeholder='Marca' />
     
@@ -8,7 +8,7 @@ function Formulario(){
             <input type='button' value='Remover' />
             <input type='button' value='Alterar' />
             <input type='button' value='Cancelar' />
-        </div>
+        </form>
     )
 }
 
