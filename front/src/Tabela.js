@@ -1,6 +1,6 @@
 function Tabela(){
     return(
-        <table>
+        <table className='table'>
             <thead>
                 <tr>
                     <th>#</th>
@@ -10,10 +10,12 @@ function Tabela(){
                 </tr>
             </thead>
             <tbody>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
             </tbody>
         </table>
     )
